@@ -36,7 +36,7 @@ Disconnect USB and enter pairing mode
 
 In Windows Bluetooth settings, pair with the device (shows as “ubit/BBC:microbit”)
 
-import settings.json in the xoutput folder
+import settings.json in the xoutput folder:https://github.com/IanLee0303/Microbit-bluetooth-steering-wheel/blob/master/settings.json
 
 Launch XOutput
 
