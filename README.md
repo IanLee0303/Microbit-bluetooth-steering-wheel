@@ -1,24 +1,70 @@
+🕹️ Micro:bit v2 Bluetooth Steering Wheel (Windows + XOutput)
+Turn your BBC micro:bit v2 into a wireless, motion-based steering wheel for racing games like Forza Horizon, Assetto Corsa, and others. Uses Bluetooth HID and XOutput to work as a virtual Xbox 360 controller on Windows.
 
-> 在 [https://ianlee0303.github.io/microbit-bluetooth-steering-wheel/](https://ianlee0303.github.io/microbit-bluetooth-steering-wheel/) 打開此頁面
+🚗 Features
+Tilt to steer — just like a real racing wheel
 
-## 作為擴充功能使用
+Button A = Throttle (Accelerate)
 
-可以在 MakeCode 中將此儲存庫新增為**擴充功能**。
+Button B = Brake
 
-* 開啟 [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* 按一下**新專案**
-* 按一下工具齒輪選單下的**擴充功能**
-* 搜索 **https://github.com/ianlee0303/microbit-bluetooth-steering-wheel** 並匯出
+Connects wirelessly via Bluetooth HID
 
-## 編輯此專案
+Works in any game that supports XInput (via XOutput)
 
-編輯 MakeCode 中的儲存庫。
+🧰 Requirements
+✅ BBC micro:bit v2 only
 
-* 開啟 [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* 按一下**匯入**，然後按一下**匯入 URL**
-* 貼上 **https://github.com/ianlee0303/microbit-bluetooth-steering-wheel** 並按一下匯入
+✅ Windows 10 or 11 with Bluetooth
 
-#### 中繼資料 (用於搜索、渲染)
+✅ XOutput (Xbox controller emulator)
 
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+✅ Microsoft MakeCode + Bluetooth Gamepad extension (yohewi/pxt-gamepad)
+
+🛠️ Setup
+Visit makecode.microbit.org
+
+Create a new project
+
+Add the Gamepad extension
+
+Import the steering wheel program (see repo)
+
+Flash the code to your micro:bit v2 using USB
+
+Disconnect USB and enter pairing mode:
+
+Hold A + B + Reset, then release Reset
+
+In Windows Bluetooth settings, pair with the device (shows as “Gamepad”)
+
+Launch XOutput
+
+Select the micro:bit HID device
+
+Map steering and triggers
+
+Click Start
+
+✅ Tested Games
+Game	Works?
+Forza Horizon 4 & 5	✅
+Assetto Corsa	✅
+F1 2023	✅
+iRacing	✅
+Roblox Racing Games	✅
+
+🖼️ Diagram
+
+⚠️ Important Notes
+❌ micro:bit v1 not supported (no HID Bluetooth support)
+
+❌ Do not add radio — it conflicts with Bluetooth HID
+
+✅ Bluetooth only — unplug USB after flashing
+
+⚠️ Run XOutput as Administrator
+
+📄 License
+MIT — Free to use, modify, and share.
+
