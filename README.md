@@ -32,19 +32,16 @@ Import the steering wheel program (see repo)
 
 Flash the code to your micro:bit v2 using USB
 
-Disconnect USB and enter pairing mode:
+Disconnect USB and enter pairing mode
 
-Hold A + B + Reset, then release Reset
-
-In Windows Bluetooth settings, pair with the device (shows as “Gamepad”)
-
-Launch XOutput
-
-Select the micro:bit HID device
+In Windows Bluetooth settings, pair with the device (shows as “ubit/BBC:microbit”)
 
 import settings.json in the xoutput folder
 
-Click Start
+Launch XOutput
+
+
+Click Start controler
 
 ✅ Tested Games
 Game	Works?
@@ -58,10 +55,6 @@ Roblox Racing Games	✅
 
 ⚠️ Important Notes
 ❌ micro:bit v1 not supported (no HID Bluetooth support)
-
-❌ Do not add radio — it conflicts with Bluetooth HID
-
-✅ Bluetooth only — unplug USB after flashing
 
 ⚠️ Run XOutput as Administrator
 
