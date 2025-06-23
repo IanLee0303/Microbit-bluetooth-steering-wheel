@@ -42,7 +42,7 @@ Launch XOutput
 
 Select the micro:bit HID device
 
-Map steering and triggers
+import settings.json in the xoutput folder
 
 Click Start
 
